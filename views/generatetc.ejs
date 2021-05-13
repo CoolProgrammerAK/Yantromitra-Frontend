@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+ 
+    <link  rel='stylesheet' href='login1.css'>
+    <%- include("boot_head")%>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <form  action='/submit10' method="POST" class="row g-3 mx-auto">
+            <h1 class='h2 mb-3 text-center fw-bold'>Grant leaving certificate</h1>
+
+            <div class="col-12">
+                <label for="name" class="form-label">Username</label>
+                <input type="text" class="form-control" id="name"  name='username'
+                        required>
+                   
+            </div>
+            <div class="col-12">
+                <label for="div" class="form-label">Division</label>
+                <input type="text" class="form-control" id="div"  name='div'
+                        required>
+                   
+            </div>
+            <button class="w-100 btn btn-lg btn-primary mt-3" type="submit" id="signup">Generate lc</button>
+           
+        </form>
+    </div>
+    
+   
+</body>
+
+<%- include("boot_low")%>
